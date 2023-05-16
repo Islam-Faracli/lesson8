@@ -1,0 +1,16 @@
+
+.container {
+    margin: 20px;
+    width: 270px;
+    height: 200px;
+    background-color: blue;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    transition: border-radius 0.3s linear;
+}
+.container:hover {
+    color: black;
+    background-color: violet;
+    border-radius: 0px;
+}

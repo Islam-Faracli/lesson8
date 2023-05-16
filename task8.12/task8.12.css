@@ -1,0 +1,27 @@
+.box {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    animation-name: Box;
+    animation-duration: 1s;
+    animation-timing-function: easy-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes Box{
+    0%{
+        background-color: blue;
+    }
+    25%{
+        background-color: red;
+
+}
+    50%{
+        background-color: green;
+}
+    75%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: blue;
+    }
+}

@@ -1,0 +1,52 @@
+main {
+    margin: 50px;
+    width: 7%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+div{
+    width: 50px;
+    height: 50px;
+    transition: all 800ms ease;
+}
+p{
+    margin: 50px;
+    top: 17vh;
+    left: 2%;
+    position: absolute;
+}
+#red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: green;
+}
+.container:hover #red{
+    transform: rotate(90deg);
+    transform-origin: top left;
+    background-color: yellow;
+}
+.container:hover #yellow{
+    transform: rotate(-90deg);
+    transform-origin: top right;
+    background-color: blue;
+}
+.container:hover #blue{
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    background-color: green;
+}
+.container:hover #green{
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+    background-color: red;
+}

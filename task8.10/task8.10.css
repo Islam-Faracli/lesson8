@@ -1,0 +1,46 @@
+body{
+    width: 50%;
+    text-align: center;
+    background-color: tomato !important;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+div{
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    background-color: springgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+.box1:hover {
+    transform: rotateX(330deg);
+    -webkit-transform: rotateX(330deg);
+    -moz-transform: rotateX(330deg);
+    -ms-transform: rotateX(330deg);
+    -o-transform: rotateX(330deg);
+}
+.box2:hover {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.box3:hover {
+    transform: rotateZ(210deg);
+    -webkit-transform: rotateZ(210deg);
+    -moz-transform: rotateZ(210deg);
+    -ms-transform: rotateZ(210deg);
+    -o-transform: rotateZ(210deg);
+}

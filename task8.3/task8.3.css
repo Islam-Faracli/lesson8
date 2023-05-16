@@ -1,0 +1,35 @@
+#red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+#blue{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+main{
+    width: 500px;
+    height: 220px;
+}
+main:hover #red{
+    width: 300px;
+}
+main:hover #blue{
+    width: 300px;
+}
+#red{
+    transition: width 1000ms ease-in-out;
+    -webkit-transition: width 1000ms ease-in-out;
+    -moz-transition: width 1000ms ease-in-out;
+    -ms-transition: width 1000ms ease-in-out;
+    -o-transition: width 1000ms ease-in-out;
+}
+#blue{
+    transition: width 1000ms 1000ms ease-in-out;
+    -webkit-transition: width 1000ms 1000ms ease-in-out;
+    -moz-transition: width 1000ms 1000ms ease-in-out;
+    -ms-transition: width 1000ms 1000ms ease-in-out;
+    -o-transition: width 1000ms 1000ms ease-in-out;
+}

@@ -1,0 +1,37 @@
+b{
+    font-size: 24px;
+    margin: 10px;
+}
+main{
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+}
+article{
+    height: 40px;
+    background-color: chocolate;  
+    animation-name: animated;  
+    animation-duration: 3s;    
+    animation-iteration-count: infinite;    
+}
+.in1{
+    animation-delay: 1s;
+}
+.in2{
+    animation-timing-function: step-end;
+}
+@keyframes animated {
+    0%{
+        width: 70px;
+    }
+    33%{
+        width: 100px;
+    }
+    66%{
+        width: 130px;
+    }
+    100%{
+        width: 70px;
+    }
+}

@@ -1,0 +1,46 @@
+h1{
+    color: green;
+}
+a{
+    text-decoration: none;
+}
+.angledrectangle { 
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 30px;
+    transform: skew(-10deg);
+    border: 2px solid black;
+    color: black;
+    font-size: 24px;
+}
+.angledrectangle:hover {
+    animation-name: shake;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+@keyframes shake {
+    0%{
+        transform: skew(10deg);
+        border-color: green;
+        color: green;
+    }
+    33%{
+        transform: skew(-10deg);
+        border-color: green;
+        color: green;
+    }
+    66%{
+        transform: skew(10deg);
+        border-color: green;
+        color: green;
+    }
+    100%{
+        transform: skew(-10deg);
+        border-color: green;
+        color: green;
+    }
+}

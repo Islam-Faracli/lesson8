@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+main{
+    margin-top: 50px;
+    margin-left: 30%;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dodgerblue;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    min-width: 500px;
+}
+.nav-list > :nth-child(1) {
+    border-top-left-radius: 10px;
+} 
+.nav-list > :nth-child(5) {
+    border-top-right-radius:10px;
+} 
+ul > li > a {
+    color: black;
+    font-size: 20px;
+}
+ul > li{
+    padding: 10px;
+    position: relative;
+    width: 80px;
+    height: 40px;
+}
+.nav-list > li:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+.nav-list > li > ul{
+    position: absolute;
+    top: 40px;
+    left: 0;    
+}
+.nav-list :nth-child(1) > ul > li {
+    background-color: dodgerblue;
+    text-align: center;
+    transform: scale(0);
+    display: none;
+}
+.nav-list :nth-child(1):hover ul li{
+    display: block;
+    animation-name: opening1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: calc(var(--i)* 0.2s);
+}
+@keyframes opening1 {
+    from {
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.nav-list :nth-child(2) > ul > li {
+    background-color: dodgerblue;
+    text-align: center;
+    display: none;
+    transform: rotateX(90deg);
+}
+.nav-list :nth-child(2):hover ul li{
+    display: block;
+    animation-name: opening2;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: calc(var(--i)* 0.2s);
+}
+@keyframes opening2 {
+    from {
+        transform: rotateX(90deg);
+}
+    to{
+        transform: rotateX(360deg);
+}
+}
+.nav-list :nth-child(3) > ul > li {
+    background-color: dodgerblue;
+    text-align: center;
+    display: none;
+    transform: rotateY(90deg);
+}
+.nav-list :nth-child(3):hover ul li{
+    display: block;
+    animation-name: opening3;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: calc(var(--i)* 0.2s);
+}
+@keyframes opening3 {
+    from {
+        transform: rotateY(90deg);
+}
+    to{
+        transform: rotateY(360deg);
+}
+}
+.nav-list :nth-child(4) > ul > li {
+    background-color: dodgerblue;
+    text-align: center;
+    transform: scale(0);
+    display: none;
+}
+.nav-list :nth-child(4):hover ul li{
+    display: block;
+    animation-name: opening4;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: calc(var(--i)* 0.2s);
+}
+@keyframes opening4 {
+    from {
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.nav-list :nth-child(5) > ul > li {
+    background-color: dodgerblue;
+    text-align: center;
+    display: none;
+    transform: rotateX(90deg);
+}
+.nav-list :nth-child(5):hover ul li{
+    display: block;
+    animation-name: opening5;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: calc(var(--i)* 0.2s);
+}
+@keyframes opening5 {
+    from {
+        transform: rotateX(90deg);
+}
+    to{
+        transform: rotateX(360deg);
+}
+}
